@@ -1,0 +1,50 @@
+[
+  {
+    "method": "Bank transfer",
+    "category": "Bank payment",
+    "description": "Transfers money between bank accounts.",
+    "verification_notes": "Availability and processing time vary by bank, country, and operator."
+  },
+  {
+    "method": "Credit and debit cards",
+    "category": "Card payment",
+    "description": "Payment using a supported card network and card issued by a bank or provider.",
+    "verification_notes": "Check supported networks, issuer restrictions, currency conversion, and cash-advance or gambling restrictions."
+  },
+  {
+    "method": "E-wallets",
+    "category": "Digital wallet",
+    "description": "A third-party wallet used to send or receive funds.",
+    "verification_notes": "The casino and wallet provider must both support the account and region; fees and withdrawal rules can differ."
+  },
+  {
+    "method": "Prepaid voucher",
+    "category": "Prepaid payment",
+    "description": "A voucher or prepaid code used to pay online.",
+    "verification_notes": "Some vouchers may support deposits only and may not support withdrawals."
+  },
+  {
+    "method": "Mobile payment",
+    "category": "Mobile payment",
+    "description": "A payment initiated through a mobile carrier or mobile-focused payment service.",
+    "verification_notes": "Country, carrier, and service eligibility may be limited; check any charges added to a phone bill."
+  },
+  {
+    "method": "Cryptocurrency",
+    "category": "Cryptocurrency",
+    "description": "A transfer using a supported digital asset and blockchain network.",
+    "verification_notes": "Confirm the supported asset and network, wallet address, network fee, volatility, and local legal requirements."
+  },
+  {
+    "method": "Open-banking payment",
+    "category": "Open banking",
+    "description": "A payment initiated through a bank-connected payment service.",
+    "verification_notes": "Availability depends on participating banks, country, and provider; confirm the authorization flow and limits."
+  },
+  {
+    "method": "Instant bank payment",
+    "category": "Bank payment",
+    "description": "A bank-based payment service designed to initiate payments quickly.",
+    "verification_notes": "Do not assume every transfer is instant; settlement, verification, and withdrawals may take longer."
+  }
+]
