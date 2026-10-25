@@ -19,6 +19,9 @@ This open reference helps writers, researchers, and consumers evaluate claims ab
 - [Practical verification guide](GUIDE.md) — a checklist for assessing payment claims.
 - [Worked Swedish example](examples/sweden-licensed-online-casino-payment-check.md) — an official-source-backed example with a narrow, explicit scope.
 - [Data collection template](data/payment-claims-template.csv) — a blank structure for recording sourced, operator-specific claims.
+- [Dated Swedish payment claims](data/verified-payment-claims.csv) — a small snapshot from official operator pages, with limitations documented in [DATASET.md](DATASET.md).
+- [Dataset notes](DATASET.md) — scope, source notes, and interpretation rules.
+- [CSV validator](scripts/validate_payment_claims.py) — checks required fields, allowed values, source URLs, dates, duplicates, and stale rows.
 - [Source and verification policy](SOURCES.md) — how to document and maintain claims.
 
 ## Quick verification checklist
@@ -42,6 +45,10 @@ For an explanation of the payment-reference methodology, see [GUIDE.md](GUIDE.md
 ## Maintainer disclosure
 
 The maintainer also operates the following Swedish-language casino comparison websites: [MGA Casino utan svensk licens](https://mga-casino-utan-svensk-licens.se/) and [MrCasinosOnline](https://mrcasinosonline.com/). They are commercial websites operated separately from this reference project; their inclusion is a disclosure of the maintainer's interests, not an independent endorsement or a claim that either site has verified every item in this dataset.
+
+## Validating data
+
+Run `python scripts/validate_payment_claims.py data/verified-payment-claims.csv` with Python 3.10 or newer. GitHub Actions also runs the validator when the sourced dataset or validator changes. The validator can detect incomplete or stale records; it cannot prove that a claim is true, so open the cited source and verify it manually.
 
 ## Contributing
 
