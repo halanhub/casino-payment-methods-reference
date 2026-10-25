@@ -17,6 +17,7 @@ This open reference helps writers, researchers, and consumers evaluate claims ab
 - [Payment-method taxonomy](data/payment-methods.csv) — general categories and cautions in spreadsheet-friendly format.
 - [JSON taxonomy](data/payment-methods.json) — the same reference in a structured format.
 - [Practical verification guide](GUIDE.md) — a checklist for assessing payment claims.
+- [Worked Swedish example](examples/sweden-licensed-online-casino-payment-check.md) — an official-source-backed example with a narrow, explicit scope.
 - [Data collection template](data/payment-claims-template.csv) — a blank structure for recording sourced, operator-specific claims.
 - [Source and verification policy](SOURCES.md) — how to document and maintain claims.
 
