@@ -1,0 +1,9 @@
+method,category,description,verification_notes
+Bank transfer,Bank payment,"Transfers money between bank accounts.","Availability and processing time vary by bank, country, and operator."
+Credit and debit cards,Card payment,"Payment using a supported card network and card issued by a bank or provider.","Check supported networks, issuer restrictions, currency conversion, and cash-advance or gambling restrictions."
+E-wallets,Digital wallet,"A third-party wallet used to send or receive funds.","The casino and wallet provider must both support the account and region; fees and withdrawal rules can differ."
+Prepaid voucher,Prepaid payment,"A voucher or prepaid code used to pay online.","Some vouchers may support deposits only and may not support withdrawals."
+Mobile payment,Mobile payment,"A payment initiated through a mobile carrier or mobile-focused payment service.","Country, carrier, and service eligibility may be limited; check any charges added to a phone bill."
+Cryptocurrency,Cryptocurrency,"A transfer using a supported digital asset and blockchain network.","Confirm the supported asset and network, wallet address, network fee, volatility, and local legal requirements."
+Open-banking payment,Open banking,"A payment initiated through a bank-connected payment service.","Availability depends on participating banks, country, and provider; confirm the authorization flow and limits."
+Instant bank payment,Bank payment,"A bank-based payment service designed to initiate payments quickly.","Do not assume every transfer is instant; settlement, verification, and withdrawals may take longer."
