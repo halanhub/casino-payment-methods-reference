@@ -1,0 +1,29 @@
+name: Validate payment reference data
+
+on:
+  push:
+    paths:
+      - "data/verified-payment-claims.csv"
+      - "scripts/validate_payment_claims.py"
+      - ".github/workflows/validate-payment-data.yml"
+  pull_request:
+    paths:
+      - "data/verified-payment-claims.csv"
+      - "scripts/validate_payment_claims.py"
+      - ".github/workflows/validate-payment-data.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-csv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate sourced payment claims
+        run: python scripts/validate_payment_claims.py data/verified-payment-claims.csv
